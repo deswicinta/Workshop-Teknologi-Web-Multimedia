@@ -1,0 +1,170 @@
+<!--Author : Putri Deswicyntari || Last Updated : 1 Maret 2024 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage Data Entry </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100;
+            background-image: url(assets/unsplash2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .content {
+            text-align: center;
+            
+            padding: 20px;
+            border-radius: 8px;
+        }
+        form {
+            max-width: 600px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            background: linear-gradient(to bottom right, #ecf4ff, #d3c2c2); /* Gradient background */
+            padding: 20px;
+            border-radius: 8px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid rgb(57, 90, 116);
+            padding: 8px;
+            background-color: white;
+          
+        }
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 6px 10px;
+            margin: 6px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="simpan"]
+        {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+            
+        }
+        input[type="reset"] {
+            background-color: #e6e6e6;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        input[type="simpan"]:hover
+        {
+            background-color: #1e903b;
+        }
+        input[type="reset"]:hover {
+            background-color: #c4c4c4;
+        }
+        .form-heading {
+            text-align: center;
+            color: rgb(1, 52, 140);
+        }
+    </style>
+</head>
+<body>
+    
+    <form>
+        <h2 class="form-heading">Data Entry Form</h2>
+        <table>
+            <tr>
+                <td>Nama :</td>
+                <td><input type="text" name="nama"></td>
+            </tr>
+            <tr>
+                <td>NRP :</td>
+                <td><input type="text" name="nrp"></td>
+            </tr>
+            <tr>
+                <td>Kelas :</td>
+                <td><input type="text" name="kelas"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin :</td>
+                <td>
+                    <input type="radio" name="jenis_kelamin" value="Pria"> Pria
+                    <input type="radio" name="jenis_kelamin" value="Wanita"> Wanita
+                </td>
+            </tr>
+            <tr>
+                <td>Agama :</td>
+                <td>
+                    <select name="agama">
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Tempat/Tanggal Lahir :</td>
+                <td><input type="text" name="tempat_lahir"></td>
+            </tr>
+            <tr>
+                <td>Alamat :</td>
+                <td><textarea name="alamat" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td>Riwayat Pendidikan :</td>
+                <td>
+                    A. SD : <input type="text" name="sd"><br>
+                    B. SMP : <input type="text" name="smp"><br>
+                    C. SMA : <input type="text" name="sma">
+                </td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <td>Homepage :</td>
+                <td><input type="text" name="homepage"></td>
+            </tr>
+            <tr>
+                <td>Hobby :</td>
+                <td><textarea name="hobby" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td>Interest :</td>
+                <td>
+                    <input type="checkbox" name="interest" value="Komputer"> Komputer
+                    <input type="checkbox" name="interest" value="Sport"> Sport
+                    <input type="checkbox" name="interest" value="Travelling"> Travelling<br>
+                    <input type="checkbox" name="interest" value="Writing"> Writing
+                    <input type="checkbox" name="interest" value="Reading"> Reading
+                </td>
+            </tr>
+            <tr>
+                <td><input type="simpan" value="Simpan"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
